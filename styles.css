@@ -36,7 +36,7 @@ h2 {
     color: #66FCF1;
 }
 
-.about, .projects, .skills, .experience, .contact {
+.about, .projects, .skills, .experience, .contact, .diplomas{
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
@@ -47,7 +47,7 @@ h2 {
     font-weight: 300;
 }
 
-.about:hover, .projects:hover, .skills:hover, .experience:hover, .contact:hover {
+.about:hover, .projects:hover, .skills:hover, .experience:hover, .contact:hover, .diplomas:hover{
     transform: scale(1.03);
 }
 
@@ -99,14 +99,20 @@ ul li:hover {
 }
 
 /* Links e interações */
+/* ESTILO GLOBAL MINIMIZADO */
 a {
     text-decoration: none;
-    color: #66FCF1;
-    transition: color 0.3s;
-    font-weight: 600;
+    color: inherit;
 }
 
-a:hover {
+/* MANTÉM ESTILOS DE LINKS EM ÁREAS ESPECÍFICAS (como .contact ou social-icons) */
+.contact a, .social-icons a {
+    color: #66FCF1;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.contact a:hover, .social-icons a:hover {
     color: #45A29E;
 }
 
@@ -178,5 +184,24 @@ a:hover {
 
     .about-text {
         max-width: 100%;
-    }
+  }  
+.diplomas ul li a {
+    display: block;
+    background: #66FCF1;
+    color: #1F2833;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 400;
+    transition: background 0.3s ease-in-out;
 }
+
+.diplomas ul li a:hover {
+    background: #45A29E;
+    color: white;
+}
+
+}
+
+
+
