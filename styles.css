@@ -226,28 +226,35 @@ a {
 }
 
 .project-link {
-    display: inline-block;
-    margin-top: 10px;
-    color: white;
-    background-color: #222;
-    padding: 8px 12px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s, transform 0.3s;
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #66FCF1;
+  border: 2px solid #66FCF1;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
 }
 
 .project-link:hover {
-    background-color: #444;
-    transform: scale(1.05);
+  background-color: #66FCF1;
+  color: #1F2833;
+  box-shadow: 0 0 8px #66FCF1;
 }
 
-.project-link i {
-    margin-right: 6px;
+.project-link:focus,
+.project-link:active {
+  outline: none;
+  box-shadow: none;
 }
-
+a:focus,
+a:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
 }
-
 
 
 
