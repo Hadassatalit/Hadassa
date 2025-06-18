@@ -94,12 +94,33 @@ ul li:hover {
     background: #1F2833;
 }
 .project-btn {
-  outline: none;
+  background-color: transparent;
+  color: #66FCF1;
+  border: 2px solid #66FCF1;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.project-btn:hover {
+  background-color: #66FCF1;
+  color: #1F2833;
+  box-shadow: 0 0 8px #66FCF1;
 }
 
 .project-btn:focus {
   outline: none;
+  box-shadow: 0 0 0 2px rgba(102, 252, 241, 0.5);
 }
+
+a:focus,
+a:active {
+  outline: none;
+}
+
 
 /* Links e interações */
 /* ESTILO GLOBAL MINIMIZADO */
